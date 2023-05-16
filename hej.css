@@ -1,0 +1,30 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 5px;
+  width: 500px;
+  height: 500px;
+  margin: 0 auto;
+  background-color: #ddd;
+}
+
+.grid-item {
+  background-color: #999;
+  transition: background-color 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: #fff;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.selected {
+  background-color: var(--background-color);
+}
+
+.matched {
+  background-color: white;
+}
